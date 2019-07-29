@@ -7,7 +7,7 @@ require 'json'
 class KabukaJob < ApplicationJob
   class_timeout 300 # 300s or 5m, current Lambda max is 15m
 
-  rate "10 hours" # every 10 hours
+  cron "0 1,6 * * 1,2,3,4,5 *" # am 10:00 JST & pm 15:00 JST
   def post
     post_slack get_kabuka
   end
