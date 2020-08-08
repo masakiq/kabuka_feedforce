@@ -133,7 +133,8 @@ GEM
       loofah (~> 2.2, >= 2.2.2)
     jmespath (1.4.0)
     json (2.2.0)
-    kramdown (2.1.0)
+    kramdown (2.3.0)
+      rexml
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -164,6 +165,7 @@ GEM
     rainbow (3.0.0)
     rake (12.3.3)
     recursive-open-struct (1.1.0)
+    rexml (3.2.4)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
